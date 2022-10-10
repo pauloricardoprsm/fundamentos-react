@@ -1,22 +1,19 @@
+
 import './index.css'
 import React from "react";
 import ReactDOM from "react-dom";
 
-// import Primeiro from './components/Primeiro'
+
+import Primeiro from './components/Primeiro'
 // import ComParametros from './components/ComParametros'
 import ComFilhos from './components/ComFilhos'
+import Card from './components/layout/Card'
 
 ReactDOM.render( 
     <div>
-        <ComFilhos>
-                <li>Paulo</li>
-                <li>Ricardo</li>
-                <li>Siqueira</li>
-        </ComFilhos>
-        {/*<Primeiro/>
-        <ComParametros titulo="Esse é o título"
-           subtitulo="Esse é o subtitulo 2"></ComParametros>
-        */}
+        <Card titulo="Exercício X">
+            <Primeiro/>
+        </Card>
     </div>,
     document.getElementById('root')
 )
